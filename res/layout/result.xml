@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/result_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/result_view"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="50dip" >
+
+        <ImageView
+            android:id="@+id/barcode_image_view"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/product_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/result_text"
+            android:textColorLink="@color/result_text"
+            android:textIsSelectable="true"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:weightSum="1" >
+
+        <View
+            android:id="@+id/fat_level_color"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/fat_label_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/standard_padding"
+            android:paddingRight="@dimen/standard_padding"
+            android:textColor="@color/result_minor_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fat_text_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical"
+            android:textColor="@color/result_minor_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:weightSum="1" >
+
+        <View
+            android:id="@+id/saturated_fat_level_color"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/saturated_fat_label_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/standard_padding"
+            android:paddingRight="@dimen/standard_padding"
+            android:textColor="@color/result_minor_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/saturated_fat_text_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:textColor="@color/result_minor_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:weightSum="1" >
+
+        <View
+            android:id="@+id/sugar_level_color"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/sugar_label_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/standard_padding"
+            android:paddingRight="@dimen/standard_padding"
+            android:textColor="@color/result_minor_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sugar_text_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:textColor="@color/result_minor_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:weightSum="1" >
+
+        <View
+            android:id="@+id/salt_level_color"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/salt_label_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/standard_padding"
+            android:paddingRight="@dimen/standard_padding"
+            android:textColor="@color/result_minor_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/salt_text_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:textColor="@color/result_minor_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/energy_label_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:paddingLeft="@dimen/standard_padding"
+            android:paddingRight="@dimen/standard_padding"
+            android:textColor="@color/result_minor_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/energy_text_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:textColor="@color/result_minor_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp" >
+
+        <TextView
+            android:id="@+id/information_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="@color/result_minor_text" />
+    </LinearLayout>
+
+</LinearLayout>
